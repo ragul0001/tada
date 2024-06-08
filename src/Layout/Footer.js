@@ -24,18 +24,18 @@ function Footer() {
             <div class="col-auto col-md-3 p-2 text-white">
               <h6>Informations</h6>
               <ul class="list-unstyled my-4 text-white ft-info">
-                <Link to="#">
-                  <li className="text-white my-3">About</li>{" "}
-                </Link>
-                <Link to="#">
-                  <li className="text-white my-3">Contact</li>
-                </Link>
-                <Link to="/term">
-                  <li className="text-white my-3">Terms & Conditions</li>
-                </Link>
-                <Link to="/refund">
-                  <li className="text-white">Refund & Cancellations Policy</li>
-                </Link>
+                <Nav.Link href="/about" className="text-white my-3">
+                  About
+                </Nav.Link>
+                <Nav.Link href="/contact" className="text-white my-3">
+                  Contact
+                </Nav.Link>
+                <Nav.Link href="/term" className="text-white my-3">
+                  Terms & Conditions
+                </Nav.Link>
+                <Nav.Link href="/refund" className="text-white my-3">
+                  Refund & Cancellations Policy
+                </Nav.Link>
               </ul>
             </div>
             <div class="col-auto col-md-3 p-2 text-white">

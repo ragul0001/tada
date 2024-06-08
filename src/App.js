@@ -10,6 +10,7 @@ import Standart from "./Payment/Standart";
 import Terms from "./features/TermsConditions";
 import Refund from "./features/Refund";
 import Contact from "./components/Contact";
+import Aboutus from "./components/Aboutus";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/refund" element={<Refund />} />
             <Route path="/term" element={<Terms />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<Aboutus />} />
           </Routes>
         </Layout>
       </BrowserRouter>

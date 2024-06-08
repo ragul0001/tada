@@ -16,7 +16,7 @@ function Header() {
               <Nav.Link href="/" className="text-white pe-md-5">
                 Home
               </Nav.Link>
-              <Nav.Link href="#about" className="text-white pe-md-5">
+              <Nav.Link href="/about" className="text-white pe-md-5">
                 About Us
               </Nav.Link>
               <Nav.Link href="/contact" className="text-white">

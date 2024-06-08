@@ -98,8 +98,8 @@ function Home() {
       <div class="container  mt-5">
         <div class="row">
           <div class="col-12 col-md-6 ">
-            <div class="sticky-top     ">
-              <img src={productImg} alt="" class="product-img rounded-5" />
+            <div class="sticky-top  my-3 py-3">
+              <img src={productImg} alt="" class="product-img rounded-5 " />
             </div>
           </div>
           <div class="col-12 col-md-6">
@@ -175,11 +175,14 @@ function Home() {
                 </ul>
               </div>
               {/* <!-- Order button --> */}
-              <div class="mt-2">
+              <div class="mt-2 position-relative">
                 <Link to="/form">
-                  <button class="border-0 rounded-3 product-btn px-2 py-1 fw-semibold text-white w-100">
+                  <button class="border-0 rounded-3 product-btn px-2 py-2 fw-semibold text-white w-100">
                     Order Now{" "}
-                    <svg
+                  </button>
+                </Link>
+              </div>
+              {/* <div>                    <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
                       height="32"
@@ -191,11 +194,7 @@ function Home() {
                         fill-rule="evenodd"
                         d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
                       />
-                    </svg>{" "}
-                  </button>
-                </Link>
-              </div>
-
+                    </svg></div> */}
               {/* <!-- Project Descriptions --> */}
               <div class="mt-3">
                 <div>
@@ -211,36 +210,34 @@ function Home() {
                   </div>
                   <div>
                     <p>
-                      📚✨ &nbsp;<strong>Custom Style:</strong> We turn your
-                      child's photo into a charming illustration, ensuring their
-                      label set is as unique as they are.
+                      <strong>Custom Style:</strong> We turn your child's photo
+                      into a charming illustration, ensuring their label set is
+                      as unique as they are.
                     </p>
                     <p>
-                      🎉&nbsp;<strong>They're colourful and sturdy</strong> The
+                      <strong>They're colourful and sturdy</strong> The
                       high-quality printing keeps the colours vibrant, and the
                       labels last the whole school year.
                     </p>
                     <p>
-                      🌈&nbsp;
                       <strong>They're special:&nbsp;</strong>
                       Personalize each label with their name and class on each
-                      label to make it theirs. 🖨️💪
+                      label to make it theirs.
                     </p>
                     <p>
-                      👧&nbsp;<strong>Keeps them organized:</strong> With our
-                      labels, no more mix-ups or lost textbooks. Kids can easily
-                      spot their books, making learning more fun and
-                      stress-free. 💬
+                      <strong>Keeps them organized:</strong> With our labels, no
+                      more mix-ups or lost textbooks. Kids can easily spot their
+                      books, making learning more fun and stress-free.
                     </p>
                     <p>
-                      🎁&nbsp;<strong>Great gifts:</strong> Surprise your child,
+                      <strong>Great gifts:</strong> Surprise your child,
                       grandchild, or little friend with these custom labels as a
                       surprise. They'll love the personal touch!
                     </p>
                     <p>
-                      📖&nbsp;<strong>Helps them stay organised:</strong> No
-                      more mix-ups or lost textbooks. Our labels help kids
-                      easily identify their books, making learning more fun and
+                      <strong>Helps them stay organised:</strong> No more
+                      mix-ups or lost textbooks. Our labels help kids easily
+                      identify their books, making learning more fun and
                       stress-free.
                     </p>
                     {/* <p>
