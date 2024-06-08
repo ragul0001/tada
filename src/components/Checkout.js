@@ -3,27 +3,6 @@ import { Link } from "react-router-dom";
 function Checkout() {
   return (
     <>
-      {/* <!-- Navbar -->
-    <!-- Apply your Navbar copy and paste here now-->
-      <!-- Changes 1  --> */}
-      <nav
-        class="navbar navbar-expand-lg bg-navbar "
-        aria-label="Eighth navbar example"
-      >
-        <div class="container">
-          <div class="d-flex align-items-center order-lg-1 ">
-            <div class="d-flex ">
-              <img
-                alt="tada-logo"
-                width="64"
-                height="64"
-                class=""
-                src="https://tada.kids/_next/static/media/Tada-logo.66358343.svg"
-              />
-            </div>
-          </div>
-        </div>
-      </nav>
       <div class="container">
         <div class="">
           <svg
@@ -1388,15 +1367,6 @@ function Checkout() {
           </div>
         </div>
       </div>
-
-      {/* <!-- Footer --> */}
-      <nav class="navbar bg-navbar mt-5">
-        <div class="container-fluid d-flex justify-content-center">
-          <span class=" mb-0  fw-medium">
-            2024 &copy;CopyRights Techtist All Rights Reserved{" "}
-          </span>
-        </div>
-      </nav>
     </>
   );
 }

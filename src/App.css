@@ -1,11 +1,17 @@
 * {
   font-family: "Poppins";
 }
+a {
+  text-decoration: none;
+}
+Link {
+  text-decoration: none;
+}
 .option-icon {
   width: 76px;
 }
 .bg-navbar {
-  background-color: #d6eff2;
+  background-color: #05233a;
 }
 .product-img {
   width: 452px;
@@ -15,7 +21,7 @@
   text-align: justify;
 }
 .product-btn {
-  background-color: #f16244;
+  background-color: #05233a;
 }
 .product-clr {
   color: #f16244;
@@ -149,6 +155,14 @@ input[type="file"]::file-selector-button {
 }
 .img-picc {
   width: 70px;
+}
+
+/* 2nd */
+.ft-icon {
+  width: 50px;
+}
+.ft-info {
+  font-size: 14px;
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) {
   .product-img {

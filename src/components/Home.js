@@ -2,43 +2,34 @@ import React from "react";
 import social from "../images/social.png";
 import { Link } from "react-router-dom";
 import Progressbar from "./Progressbar";
+import logo from "../images/logo.png";
+import BannerImg from "../images/banner.png";
+import BannerImg2 from "../images/Lbanner.png";
+import productImg from "../images/left-banner.png";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home() {
-    
   return (
     <>
-      <nav
-        class="navbar navbar-expand-lg bg-navbar "
-        aria-label="Eighth navbar example"
-      >
-        <div class="container">
-          <div class="d-flex align-items-center order-lg-1 ">
-            <div class="d-flex ">
-              <img
-                alt="tada-logo"
-                width="64"
-                height="64"
-                class=""
-                src="https://tada.kids/_next/static/media/Tada-logo.66358343.svg"
-              />
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <div class="container mt-4">
-        <div class="d-flex justify-content-center rounded-5 ">
+      <div class="container ">
+        <div class="d-flex justify-content-center rounded-5 mt-5">
           <img
-            src="https://tada.kids/_next/image?url=https%3A%2F%2Fd3ny489hugqfbu.cloudfront.net%2Fpublic%2Fbanner%2Fbanner-object-1%2FI240405134902627504.webp&w=1080&q=75"
+            src={BannerImg}
             alt=""
-            class="img-fluid rounded-5"
+            class="img-fluid rounded-5 d-block d-md-block d-lg-none"
+          />
+          <img
+            src={BannerImg2}
+            alt=""
+            class="img-fluid rounded-5 d-none d-md-none d-lg-block"
           />
         </div>
       </div>
 
       <div class="container d-flex justify-content-center overflow-hidden">
         <div class="row mt-3 ">
-          <div class="col-4 col-md-auto">
+          <div class="col-6 col-md-auto">
             <div class="d-flex flex-column align-items-center">
               <img
                 src="https://tada.kids/featureicon/freedelivery.svg"
@@ -48,7 +39,7 @@ function Home() {
               <p class="text-secondary mt-1">All India Free Delivery</p>
             </div>
           </div>
-          <div class="col-4 col-md-auto">
+          <div class="col-6 col-md-auto">
             <div class="d-flex flex-column align-items-center">
               <img
                 src="https://tada.kids/featureicon/delivery.svg"
@@ -58,17 +49,17 @@ function Home() {
               <p class="text-secondary mt-1">Dispatch Within 48 Hours</p>
             </div>
           </div>
-          <div class="col-4 col-md-auto">
+          <div class="col-6 col-md-auto">
             <div class="d-flex flex-column align-items-center">
               <img
                 src="https://tada.kids/featureicon/design.svg"
                 alt=""
                 class="option-icon"
               />
-              <p class="text-secondary mt-1">Personalised For You</p>
+              <p class="text-secondary mt-1">Designed especially for you</p>
             </div>
           </div>
-          <div class="col-4 col-md-auto">
+          {/* <div class="col-4 col-md-auto">
             <div class="d-flex flex-column align-items-center">
               <img
                 src="https://tada.kids/featureicon/lasting.svg"
@@ -87,15 +78,15 @@ function Home() {
               />
               <p class="text-secondary mt-1">Easy Ordering</p>
             </div>
-          </div>
-          <div class="col-4 col-md-auto">
+          </div> */}
+          <div class="col-6 col-md-auto">
             <div class="d-flex flex-column align-items-center">
               <img
                 src="https://tada.kids/featureicon/happiness.svg"
                 alt=""
                 class="option-icon"
               />
-              <p class="text-secondary mt-1">Happiness Guaranteed</p>
+              <p class="text-secondary mt-1">Satisfaction assured.</p>
             </div>
           </div>
         </div>
@@ -108,23 +99,18 @@ function Home() {
         <div class="row">
           <div class="col-12 col-md-6 ">
             <div class="sticky-top     ">
-              <img
-                src="https://tada.kids/_next/image?url=https%3A%2F%2Fd3ny489hugqfbu.cloudfront.net%2Fpublic%2Fproductimage%2Fproduct_images%2FI240511164231403810.jpg&w=750&q=75"
-                alt=""
-                class="product-img rounded-5"
-              />
+              <img src={productImg} alt="" class="product-img rounded-5" />
             </div>
           </div>
           <div class="col-12 col-md-6">
             <div>
-              <h4 class=" fw-semibold">
-                Personalised Book Label & Bag Tag Combo
-              </h4>
+              <h4 class=" fw-semibold">Personalized Book Labels</h4>
               <p class="mt-3 text-secondart product-text">
-                Customized labels and bag tag featuring a cartoonized picture of
-                your child. Labels include name, class, and school, comprising
-                24 book labels, 6 name labels for stationary, and 8 pen labels.
-                The bag tag includes parent's contact address and details.
+                Introducing Personalized Book Labels: Showcase Your Child's
+                Charm! Each label is adorned with your little one's delightful
+                portrait, alongside their name, class details, and school
+                affiliation. This pack comprises 60 uniquely crafted labels,
+                adding a touch of personality to every book in their collection.
               </p>
               {/* <!-- Btn and offer --> */}
               <div>
@@ -132,10 +118,10 @@ function Home() {
                   Offer Ends in 7hr 42min 12s
                 </button>
                 <p class="mt-3 fs-5 fw-semibold">
-                  <span class="product-clr">37% Off</span>
-                  <span class=" px-2">$598</span>
+                  <span class="product-clr">29% Off</span>
+                  <span class=" px-2">₹249</span>
                   <sup class="text-muted text-decoration-line-through ">
-                    $948
+                    ₹349
                   </sup>
                 </p>
               </div>
@@ -190,14 +176,6 @@ function Home() {
               </div>
               {/* <!-- Order button --> */}
               <div class="mt-2">
-                <p>
-                  <a
-                    href="#"
-                    class="product-clr text-decoration-none fw-semibold"
-                  >
-                    How to Place Order?
-                  </a>
-                </p>
                 <Link to="/form">
                   <button class="border-0 rounded-3 product-btn px-2 py-1 fw-semibold text-white w-100">
                     Order Now{" "}
@@ -224,42 +202,48 @@ function Home() {
                   <h3>Project Description</h3>
                   <div>
                     <p>
-                      📚✨ A little something to add a touch of magic to study
-                      time! This entire set of Personalised Book Labels can be
-                      personalised on art made from your little one’s photo. You
-                      can customise each set to make their books truly their
-                      own. Here's what makes our labels the perfect addition to
-                      their school supplies:
+                      Bring a little magic to study time with our Personalized
+                      Book Labels! Transform your child's photo into unique
+                      artwork for each label, making their books stand out.
+                      Here’s why our labels are an essential addition to their
+                      school supplies:
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      📚✨ &nbsp;<strong>Custom Style:</strong> We turn your
+                      child's photo into a charming illustration, ensuring their
+                      label set is as unique as they are.
                     </p>
                     <p>
-                      🎉&nbsp;<strong>It’s custom art:</strong> We transform
-                      your child's photo into a whimsical cartoon-style
-                      illustration, ensuring their label set is as unique as
-                      they are.
+                      🎉&nbsp;<strong>They're colourful and sturdy</strong> The
+                      high-quality printing keeps the colours vibrant, and the
+                      labels last the whole school year.
                     </p>
                     <p>
                       🌈&nbsp;
-                      <strong>They’re vibrant and durable:&nbsp;</strong>
-                      High-quality printing means the colours stay bright, and
-                      the labels last throughout the school year. 🖨️💪
+                      <strong>They're special:&nbsp;</strong>
+                      Personalize each label with their name and class on each
+                      label to make it theirs. 🖨️💪
                     </p>
                     <p>
-                      👧&nbsp;<strong>They’re one-of-a-kind:</strong> Add their
-                      name or class to make each label uniquely theirs. 💬
+                      👧&nbsp;<strong>Keeps them organized:</strong> With our
+                      labels, no more mix-ups or lost textbooks. Kids can easily
+                      spot their books, making learning more fun and
+                      stress-free. 💬
+                    </p>
+                    <p>
+                      🎁&nbsp;<strong>Great gifts:</strong> Surprise your child,
+                      grandchild, or little friend with these custom labels as a
+                      surprise. They'll love the personal touch!
                     </p>
                     <p>
                       📖&nbsp;<strong>Helps them stay organised:</strong> No
                       more mix-ups or lost textbooks. Our labels help kids
                       easily identify their books, making learning more fun and
-                      stress-free. 🤓
+                      stress-free.
                     </p>
-                    <p>
-                      🎁&nbsp;<strong>They make the perfect gifts:</strong>{" "}
-                      Surprise your child, grandchild or little friend with a
-                      set of these custom labels. They'll love the personal
-                      touch!
-                    </p>
-                    <p>
+                    {/* <p>
                       The perfect way to add a touch of personality and
                       uniqueness to your child's belongings! 🎉 Our bag tags are
                       designed to withstand the wear &amp; tear of everyday use
@@ -281,7 +265,7 @@ function Home() {
                       <strong>💯No more lost bags -&nbsp;</strong>Ensures that
                       lost bags can be easily identified and brought back to
                       your child.&nbsp;
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -290,12 +274,11 @@ function Home() {
         </div>
       </div>
       {/* <!-- Reviews --> */}
-      <div class="container mt-2">
+      {/* <div class="container mt-2">
         <div class=" d-md-flex justify-content-md-between border-0  border-clr rounded-3">
           <div class="p-2 p-md-3">
             <div class=" ">
-              {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 85 36" class="injected-svg w-25" data-src="https://static.elfsight.com/icons/app-all-in-one-reviews-logos-google-logo-multicolor.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g clip-path="url(#a-1)"><path fill="#4285F4" d="M20.778 13.43h-9.862v2.927h6.994c-.345 4.104-3.76 5.854-6.982 5.854-4.123 0-7.72-3.244-7.72-7.791 0-4.43 3.429-7.841 7.73-7.841 3.317 0 5.272 2.115 5.272 2.115l2.049-2.122s-2.63-2.928-7.427-2.928C4.725 3.644 0 8.8 0 14.367c0 5.457 4.445 10.777 10.988 10.777 5.756 0 9.969-3.942 9.969-9.772 0-1.23-.179-1.941-.179-1.941Z"></path><path fill="#EA4335" d="M28.857 11.312c-4.047 0-6.947 3.163-6.947 6.853 0 3.744 2.813 6.966 6.994 6.966 3.786 0 6.887-2.893 6.887-6.886 0-4.576-3.607-6.933-6.934-6.933Zm.04 2.714c1.99 0 3.876 1.609 3.876 4.201 0 2.538-1.878 4.192-3.885 4.192-2.205 0-3.945-1.766-3.945-4.212 0-2.394 1.718-4.181 3.954-4.181Z"></path><path fill="#FBBC05" d="M43.965 11.312c-4.046 0-6.946 3.163-6.946 6.853 0 3.744 2.813 6.966 6.994 6.966 3.785 0 6.886-2.893 6.886-6.886 0-4.576-3.607-6.933-6.934-6.933Zm.04 2.714c1.99 0 3.876 1.609 3.876 4.201 0 2.538-1.877 4.192-3.885 4.192-2.205 0-3.945-1.766-3.945-4.212 0-2.394 1.718-4.181 3.955-4.181Z"></path><path fill="#4285F4" d="M58.783 11.319c-3.714 0-6.634 3.253-6.634 6.904 0 4.16 3.385 6.918 6.57 6.918 1.97 0 3.017-.782 3.79-1.68v1.363c0 2.384-1.448 3.812-3.633 3.812-2.11 0-3.169-1.57-3.537-2.46l-2.656 1.11c.943 1.992 2.839 4.07 6.215 4.07 3.693 0 6.508-2.327 6.508-7.205V11.734h-2.897v1.17c-.89-.96-2.109-1.585-3.726-1.585Zm.269 2.709c1.821 0 3.69 1.554 3.69 4.21 0 2.699-1.865 4.187-3.73 4.187-1.98 0-3.823-1.608-3.823-4.161 0-2.653 1.914-4.236 3.863-4.236Z"></path><path fill="#EA4335" d="M78.288 11.302c-3.504 0-6.446 2.788-6.446 6.901 0 4.353 3.28 6.934 6.782 6.934 2.924 0 4.718-1.6 5.789-3.032l-2.389-1.59c-.62.962-1.656 1.902-3.385 1.902-1.943 0-2.836-1.063-3.39-2.094l9.266-3.845-.48-1.126c-.896-2.207-2.984-4.05-5.747-4.05Zm.12 2.658c1.263 0 2.171.671 2.557 1.476l-6.187 2.586c-.267-2.002 1.63-4.062 3.63-4.062Z"></path><path fill="#34A853" d="M67.425 24.727h3.044V4.359h-3.044v20.368Z"></path></g><defs><clipPath id="a-1"><path fill="#fff" d="M0 0h84.515v36H0z"></path></clipPath></defs></svg>
-               */}
+
               <img src={social} className="img-picc" />
               <span class=""> Rating</span>
             </div>
@@ -802,15 +785,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-
-      <nav class="navbar bg-navbar">
-        <div class="container-fluid d-flex justify-content-center">
-          <span class=" mb-0  fw-medium">
-            2024 &copy;CopyRights Techtist All Rights Reserved{" "}
-          </span>
-        </div>
-      </nav>
+      </div> */}
     </>
   );
 }

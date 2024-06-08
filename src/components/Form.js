@@ -5,15 +5,7 @@ function Form() {
 
   return (
     <>
-          <nav class="navbar navbar-expand-lg bg-navbar " aria-label="Eighth navbar example">
-        <div class="container">
-             <div class="d-flex align-items-center order-lg-1 ">
-                    <div class="d-flex ">
-                        <img alt="tada-logo"  width="64" height="64" class="" src="https://tada.kids/_next/static/media/Tada-logo.66358343.svg" />
-                    </div>
-              </div>
-        </div>
-      </nav>
+
                  <section>
                     <div class="container">
                       <div class="row justify-content-center">

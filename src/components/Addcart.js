@@ -14,28 +14,7 @@ function Addcart() {
   };
   return (
     <>
-      {/*      
-     <!-- Navbar -->
-    <!-- Apply your Navbar copy and paste here now-->
-      <!-- Changes 1  --> */}
-      <nav
-        class="navbar navbar-expand-lg bg-navbar "
-        aria-label="Eighth navbar example"
-      >
-        <div class="container">
-          <div class="d-flex align-items-center order-lg-1 ">
-            <div class="d-flex ">
-              <img
-                alt="tada-logo"
-                width="64"
-                height="64"
-                class=""
-                src="https://tada.kids/_next/static/media/Tada-logo.66358343.svg"
-              />
-            </div>
-          </div>
-        </div>
-      </nav>
+
       <section>
         <section class="h-100 gradient-custom">
           <div class="container py-5">
@@ -405,14 +384,7 @@ function Addcart() {
           </div>
         </section>
       </section>
-      {/* <!-- Footer --> */}
-      <nav class="navbar bg-navbar">
-        <div class="container-fluid d-flex justify-content-center">
-          <span class=" mb-0  fw-medium">
-            2024 &copy;CopyRights Techtist All Rights Reserved{" "}
-          </span>
-        </div>
-      </nav>
+
     </>
   );
 }
