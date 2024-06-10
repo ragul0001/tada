@@ -11,6 +11,7 @@ import Terms from "./features/TermsConditions";
 import Refund from "./features/Refund";
 import Contact from "./components/Contact";
 import Aboutus from "./components/Aboutus";
+import Stepper from "./Stepper/StepLayout";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/term" element={<Terms />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<Aboutus />} />
+            <Route path="/step" element={<Stepper />} />
           </Routes>
         </Layout>
       </BrowserRouter>

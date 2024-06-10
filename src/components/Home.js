@@ -36,7 +36,7 @@ function Home() {
                 alt=""
                 class="option-icon"
               />
-              <p class="text-secondary mt-1">All India Free Delivery</p>
+              <p class="text-secondary mt-1">All India Shipping</p>
             </div>
           </div>
           <div class="col-6 col-md-auto">
@@ -46,7 +46,7 @@ function Home() {
                 alt=""
                 class="option-icon"
               />
-              <p class="text-secondary mt-1">Dispatch Within 48 Hours</p>
+              <p class="text-secondary mt-1">Dispatces in 48 Hours</p>
             </div>
           </div>
           <div class="col-6 col-md-auto">
@@ -138,7 +138,7 @@ function Home() {
                         />
                       </div>
                       <div class="ps-2  mt-3">
-                        <p class="">All India FREE Shipping</p>
+                        <p class="">All India Shipping</p>
                       </div>
                     </div>
                   </li>
@@ -152,7 +152,7 @@ function Home() {
                         />
                       </div>
                       <div class="ps-2 mt-3 ">
-                        <p class="">Dispatch within 48 Hours</p>
+                        <p class="">Dispatches in 48 Hours</p>
                       </div>
                     </div>
                   </li>
@@ -177,7 +177,7 @@ function Home() {
               {/* <!-- Order button --> */}
               <div class="mt-2 position-relative">
                 <Link to="/form">
-                  <button class="border-0 rounded-3 product-btn px-2 py-2 fw-semibold text-white w-100">
+                  <button class="border-0 rounded-3  product-b px-2 py-2 fw-semibold text-white w-100">
                     Order Now{" "}
                   </button>
                 </Link>
