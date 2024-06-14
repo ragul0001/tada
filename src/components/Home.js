@@ -176,7 +176,7 @@ function Home() {
               </div>
               {/* <!-- Order button --> */}
               <div class="mt-2 position-relative">
-                <Link to="/form">
+                <Link to="step/form">
                   <button class="border-0 rounded-3  product-b px-2 py-2 fw-semibold text-white w-100">
                     Order Now{" "}
                   </button>

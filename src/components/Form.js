@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function Form({ onNext }) {
+function Form() {
   return (
     <>
       <section>
@@ -102,11 +102,8 @@ function Form({ onNext }) {
               </div>
               <div class="row justify-content-start mb-3  mt-4 ">
                 <div class="">
-                  <Link to="/addcart">
-                    <button
-                      onClick={onNext}
-                      class="product-btn border-0 p-2 text-white rounded-5 w-100"
-                    >
+                  <Link to="../addcart">
+                    <button class="product-btn border-0 p-2 text-white rounded-5 w-100">
                       Add to Cart
                     </button>
                   </Link>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 function Addcart() {
   const [count, setCount] = useState(0);
 
@@ -14,7 +14,6 @@ function Addcart() {
   };
   return (
     <>
-
       <section>
         <section class="h-100 gradient-custom">
           <div class="container py-5">
@@ -108,13 +107,13 @@ function Addcart() {
                               <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
                             </svg>
                           </button>
-                          <div>
+                          <div className="col-4">
                             <input
-                              type="number"
+                              type="text"
                               id="form1"
                               min="0"
                               name="quantity"
-                              class="form-control"
+                              class="form-control text-center"
                               value={count}
                               onChange={handleChange}
                             />
@@ -369,14 +368,16 @@ function Addcart() {
                       </li>
                     </ul>
 
-                   <Link to={"/checkout"}><button
-                      type="button"
-                      data-mdb-button-init
-                      data-mdb-ripple-init
-                      class="product-btn border-0 text-white rounded-3 p-2 px-3 btn-lg btn-block"
-                    >
-                      Go to checkout
-                    </button></Link> 
+                    <Link to="../checkout">
+                      <button
+                        type="button"
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="product-btn border-0 text-white rounded-3 p-2 px-3 btn-lg btn-block"
+                      >
+                        Go to checkout
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -384,7 +385,6 @@ function Addcart() {
           </div>
         </section>
       </section>
-
     </>
   );
 }

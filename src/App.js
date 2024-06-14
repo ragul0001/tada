@@ -20,15 +20,17 @@ function App() {
         <Layout>
           <Routes>
             <Route index element={<Home />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/form" element={<Form />} />
-            <Route path="/addcart" element={<Addcart />} />
+            <Route path="/step/*" element={<Stepper />}>
+              <Route path="form" element={<Form />} />
+              <Route path="addcart" element={<Addcart />} />
+              <Route path="checkout" element={<Checkout />} />
+            </Route>
             <Route path="/pay" element={<Standart />} />
             <Route path="/refund" element={<Refund />} />
             <Route path="/term" element={<Terms />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<Aboutus />} />
-            <Route path="/step" element={<Stepper />} />
+
           </Routes>
         </Layout>
       </BrowserRouter>
