@@ -15,9 +15,9 @@ function Standart() {
       key: "rzp_test_QNnWaW9MEzuYvR",
       amount: data.amount,
       currency: data.currency,
-      name: data.name,
-      description: data.description,
-      image: data.image,
+      name: book.name,
+      description: "Test Descriptions",
+      image: book.img,
       order_id: data.id,
       handler: async (response) => {
         try {
@@ -31,6 +31,9 @@ function Standart() {
       theme: {
         color: "#3399cc",
       },
+      method: {
+        upi: true, // Enable UPI payment
+      },
     };
     const rzrp1 = new window.Razorpay(options);
     rzrp1.open();
@@ -42,7 +45,7 @@ function Standart() {
       const amountInPaise = parseInt(book.price) * 100; // Convert to paise
       const { data } = await axios.post(orderUrl, { amount: amountInPaise });
       console.log(data);
-      initPayment(data);
+      initPayment(data.data);
     } catch (err) {
       console.log(err);
     }

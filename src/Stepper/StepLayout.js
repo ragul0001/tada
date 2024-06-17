@@ -5,8 +5,8 @@ import { Outlet, useLocation } from "react-router-dom";
 function StepLayout() {
   const steps = [
     { title: "Child Details" },
-    { title: "Address" },
-    { title: "Booking confirmation" },
+    { title: "Items" },
+    { title: "Confirmation" },
   ];
   const location = useLocation();
   const [activeStep, setActiveStep] = useState(0);
